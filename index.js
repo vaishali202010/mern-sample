@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Connect to MongoDB
 // mongoose.connect('mongodb://localhost:27017/mernstackdb', {
-mongoose.connect('mongodb+srv://pvaishali135:FmncLBdCTHClbqb0@cluster0.5g2vf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://pvaishali135:FmncLBdCTHClbqb0@cluster0.5g2vf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&ssl=true', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
