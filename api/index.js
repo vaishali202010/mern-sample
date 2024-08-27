@@ -20,12 +20,12 @@ const ItemSchema = new mongoose.Schema({
 const Item = mongoose.model('Item', ItemSchema);
 
 // API routes
-app.get('/api/items', async (req, res) => {
+app.get('/', async (req, res) => {
   const items = await Item.find();
   res.json(items);
 });
 
-app.post('/api/items', async (req, res) => {
+app.post('/', async (req, res) => {
   const newItem = new Item(req.body);
   await newItem.save();
   res.json(newItem);
